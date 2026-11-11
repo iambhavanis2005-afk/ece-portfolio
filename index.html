@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Portfolio | My Digital Space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080d1b;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #10182b;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: #42d9ff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #42d9ff;
+            text-shadow:0 0 10px #42d9ff;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 70px 10%;
+        }
+
+        .hero p:first-child {
+            color: #42d9ff;
+            letter-spacing: 3px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 68px);
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: #42d9ff;
+        }
+
+        .hero .description {
+            color: #aab6cc;
+            max-width: 600px;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 25px;
+            background: #42d9ff;
+            color: #080d1b;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        section {
+            padding: 75px 10%;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #42d9ff;
+            margin-bottom: 25px;
+        }
+
+        .section-text {
+            color: #b6c1d5;
+            line-height: 1.8;
+            max-width: 750px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #121e35;
+            padding: 25px;
+            border: 1px solid #263957;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #42d9ff;
+        }
+
+        .card h3 {
+            color: #42d9ff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #b6c1d5;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #10182b;
+            color: #aab6cc;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+        }
+    /* Premium hover effects */
+
+.card {
+    box-shadow: 0 5px 20px rgba(0, 200, 255, 0.08);
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 200, 255, 0.25);
+    transform: translateY(-8px);
+}
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+nav a {
+    transition: 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DS|ECE.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <p>WELCOME TO MY DIGITAL SPACE</p>
+    <div style="color:#42d9ff; border:1px solid #42d9ff; padding:8px 15px; border-radius:20px; width:fit-content; margin-bottom:15px;">
+    ✦ ELECTRONICS & COMMUNICATION ENGINEERING
+</div>
+    <h1>Engineering ideas into <span>Innovation</span></h1>
+    <p class="description">
+        Electronics & Communication Engineering | Technology | Innovation.
+        Exploring electronics, embedded systems and the technologies
+        that shape our future.
+    </p>
+    <a href="#about" class="btn">Explore My Portfolio →</a>
+</div>
+
+<section id="about">
+    <h2>My ECE Journey</h2>
+    <p class="section-text">
+        Exploring the fascinating world of electronics, digital circuits, communication systems and emerging technologies. Every concept I learn brings me closer to understanding how technology connects the world.
+    </p>
+</section>
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Digital Electronics</h3>
+            <p>Digital circuits and logic gates.</p>
+        </div>
+
+        <div class="card">
+            <h3>Analog Electronics</h3>
+            <p>Electronic circuits and components.</p>
+        </div>
+
+        <div class="card">
+            <h3>Microcontrollers</h3>
+            <p>Microcontroller fundamentals.</p>
+        </div>
+
+        <div class="card">
+            <h3>Communication Systems</h3>
+            <p>Communication principles.</p>
+        </div>
+
+        <div class="card">
+            <h3>IoT</h3>
+            <p>Connected devices and smart technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>C Programming</h3>
+            <p>Programming fundamentals.</p>
+        </div>
+    </div>
+</section>
+<section id="projects">
+    <h2>Project Concepts & Exploration</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Smart Energy Meter</h3>
+            <p>Exploring electricity monitoring and energy-saving technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automatic Street Light</h3>
+            <p>Understanding sensor-based automatic lighting systems.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wireless Communication</h3>
+            <p>Exploring wireless signals and data transmission.</p>
+        </div>
+    </div>
+</section>
+<section id="certifications">
+    <h2>Certifications & Achievements</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Technical Learning</h3>
+            <p>Continuously improving my electronics and programming knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>Workshops</h3>
+            <p>Space to showcase technical workshops and participation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Achievements</h3>
+            <p>Space to showcase academic and technical achievements.</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Let's Connect</h2>
+
+    <p class="section-text">
+        Interested in electronics, communication technology
+        and innovation? Let's connect, share ideas and learn
+        together.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>My Interest</h3>
+            <p>Electronics and Emerging Technologies</p>
+        </div>
+
+        <div class="card">
+            <h3>My Goal</h3>
+            <p>Learning, Building and Innovating</p>
+        </div>
+    </div>
+</section>
+<footer style="text-align:center; padding:25px; color:#9ca3af; border-top:1px solid #263449; margin-top:40px;">
+    <p>© 2026 DS | ECE. All Rights Reserved.</p>
+    <p>Designed with passion for Electronics & Technology.</p>
+</footer>
+</body>
+</html>
